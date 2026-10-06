@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower - Esperando a Mateo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="invitacion">
+
+        <!-- Imagen principal -->
+        <img src="imagenes/osito.jpg" alt="Osito de bebe" class="imagen">
+
+        <!-- Titulo -->
+        <h1>Esperando a Mateo</h1>
+
+        <h2>Baby Shower</h2>
+
+        <p>¡Un pequeño milagro está por llegar!</p>
+
+        <!-- Datos del evento -->
+        <div class="datos">
+
+            <p>
+                <strong>Fecha:</strong>
+                20 de noviembre de 2026
+            </p>
+
+            <p>
+                <strong>Hora:</strong>
+                4:00 PM
+            </p>
+
+            <p>
+                <strong>Lugar:</strong>
+                Quinta Ramos Gzz
+            </p>
+
+            <p>
+                <strong>Montemorelos, Nuevo León</strong>
+            </p>
+
+        </div>
+
+        <!-- Botón de Google Maps -->
+        <a href="https://www.google.com/maps/search/?api=1&query=Quinta+Ramos+Gzz+Montemorelos+Nuevo+Leon"
+           target="_blank"
+           class="boton-maps">
+
+            📍 Ver ubicación en Google Maps
+
+        </a>
+
+        <hr>
+
+        <!-- Confirmación -->
+        <h2>Confirma tu asistencia</h2>
+
+        <form id="formulario">
+
+            <label for="nombre">
+                Nombre:
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                required
+            >
+
+            <label for="correo">
+                Correo:
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                required
+            >
+
+            <label for="acompanantes">
+                Número de acompañantes:
+            </label>
+
+            <input
+                type="number"
+                id="acompanantes"
+                min="0"
+                max="5"
+                required
+            >
+            <button type="submit">
+                Confirmar asistencia
+            </button>
+
+        </form>
+        <!-- Mensaje de confirmacion -->
+        <p id="mensaje"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
